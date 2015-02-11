@@ -15,3 +15,11 @@ C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.csprojReso
 C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.Properties.Resources.resources
 C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.csproj.GenerateResource.Cache
 C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.TimeKeeperForm.resources
+D:\Source\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.exe
+D:\Source\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.pdb
+D:\Source\TimeKeeper\TimeKeeper\bin\Debug\TimeKeeper.exe
+D:\Source\TimeKeeper\TimeKeeper\bin\Debug\TimeKeeper.pdb
+D:\Source\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.csprojResolveAssemblyReference.cache
+D:\Source\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.Properties.Resources.resources
+D:\Source\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.TimeKeeperForm.resources
+D:\Source\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.csproj.GenerateResource.Cache
