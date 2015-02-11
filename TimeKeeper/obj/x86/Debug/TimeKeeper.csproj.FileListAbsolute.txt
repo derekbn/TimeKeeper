@@ -1,0 +1,17 @@
+C:\Documents and Settings\Nelson Family\My Documents\Visual Studio 2010\Projects\TimeKeeper\TimeKeeper\bin\Debug\TimeKeeper.exe
+C:\Documents and Settings\Nelson Family\My Documents\Visual Studio 2010\Projects\TimeKeeper\TimeKeeper\bin\Debug\TimeKeeper.pdb
+C:\Documents and Settings\Nelson Family\My Documents\Visual Studio 2010\Projects\TimeKeeper\TimeKeeper\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Nelson Family\My Documents\Visual Studio 2010\Projects\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.Properties.Resources.resources
+C:\Documents and Settings\Nelson Family\My Documents\Visual Studio 2010\Projects\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.Form1.resources
+C:\Documents and Settings\Nelson Family\My Documents\Visual Studio 2010\Projects\TimeKeeper\TimeKeeper\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Nelson Family\My Documents\Visual Studio 2010\Projects\TimeKeeper\TimeKeeper\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Nelson Family\My Documents\Visual Studio 2010\Projects\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.exe
+C:\Documents and Settings\Nelson Family\My Documents\Visual Studio 2010\Projects\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.pdb
+C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.exe
+C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.pdb
+C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\bin\Debug\TimeKeeper.exe
+C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\bin\Debug\TimeKeeper.pdb
+C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.csprojResolveAssemblyReference.cache
+C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.Properties.Resources.resources
+C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.csproj.GenerateResource.Cache
+C:\Users\Derek\Dropbox\TimeKeeper\TimeKeeper\obj\x86\Debug\TimeKeeper.TimeKeeperForm.resources
