@@ -26,8 +26,6 @@ namespace TimeKeeper
 			InitializeComponent();
 			mTodaysDateTimePicker.Value = DateTime.Now;
 
-			// This is just a comment to see how commit works.
-
 		}
 	}
 }
