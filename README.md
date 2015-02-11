@@ -1,4 +1,4 @@
-time-checker
+TimeKeeper
 ============
 
 Time Keeper Application
