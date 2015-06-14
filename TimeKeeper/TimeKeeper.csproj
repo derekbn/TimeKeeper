@@ -34,7 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>clock.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -101,7 +102,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="clock.ico" />
     <Content Include="README.txt" />
     <None Include="Resources\clock.ico" />
   </ItemGroup>

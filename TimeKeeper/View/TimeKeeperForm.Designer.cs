@@ -50,22 +50,7 @@
 			this.mTOCTimeOUTDateTimePicker = new System.Windows.Forms.DateTimePicker();
 			this.mTimeEntryGroupBox = new System.Windows.Forms.GroupBox();
 			this.mMainTimeEntryTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-			this.mTotalRegTextBox = new System.Windows.Forms.TextBox();
-			this.mSatRegTextBox = new System.Windows.Forms.TextBox();
-			this.mFriRegTextBox = new System.Windows.Forms.TextBox();
-			this.mWedRegTextBox = new System.Windows.Forms.TextBox();
-			this.mTueRegTextBox = new System.Windows.Forms.TextBox();
-			this.mMonRegTextBox = new System.Windows.Forms.TextBox();
-			this.mSunRegTextBox = new System.Windows.Forms.TextBox();
-			this.mThurRegTextBox = new System.Windows.Forms.TextBox();
-			this.mSunOverTextBox = new System.Windows.Forms.TextBox();
-			this.mMonOverTextBox = new System.Windows.Forms.TextBox();
-			this.mTueOverTextBox = new System.Windows.Forms.TextBox();
-			this.mWedOverTextBox = new System.Windows.Forms.TextBox();
-			this.mThurOverTextBox = new System.Windows.Forms.TextBox();
-			this.mFriOverTextBox = new System.Windows.Forms.TextBox();
-			this.mSatOverTextBox = new System.Windows.Forms.TextBox();
-			this.mTotalOverTextBox = new System.Windows.Forms.TextBox();
+			this.mTotalTextBox = new System.Windows.Forms.TextBox();
 			this.mTimeLeftLabel = new System.Windows.Forms.Label();
 			this.mTotalLabel = new System.Windows.Forms.Label();
 			this.mSaturdayLabel = new System.Windows.Forms.Label();
@@ -75,20 +60,34 @@
 			this.mTuesdayLabel = new System.Windows.Forms.Label();
 			this.mMondayLabel = new System.Windows.Forms.Label();
 			this.mSundayLabel = new System.Windows.Forms.Label();
-			this.mTimeLeftOverTextBox = new System.Windows.Forms.TextBox();
-			this.mTimeLeftRegTextBox = new System.Windows.Forms.TextBox();
+			this.mTimeLeftTextBox = new System.Windows.Forms.TextBox();
 			this.mRegularTimeLabel = new System.Windows.Forms.Label();
 			this.mOvertimeLabel = new System.Windows.Forms.Label();
+			this.mSunRegNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mMonRegNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mSunOverNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mTueRegNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mWedRegNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mThrRegNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mFriRegNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mSatRegNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mMonOverNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mTueOverNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mWedOverNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mThrOverNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mFriOverNumericUpDown = new System.Windows.Forms.NumericUpDown();
+			this.mSatOverNumericUpDown = new System.Windows.Forms.NumericUpDown();
 			this.mOptionsGroupBox = new System.Windows.Forms.GroupBox();
 			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
 			this.mTodaysDateLabel = new System.Windows.Forms.Label();
 			this.mTodaysDateTimePicker = new System.Windows.Forms.DateTimePicker();
-			this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+			this.mMaxTimeNumericUpDown = new System.Windows.Forms.NumericUpDown();
 			this.mMaxTimeLabel = new System.Windows.Forms.Label();
 			this.mTimeEntryToolStripContainer = new System.Windows.Forms.ToolStripContainer();
 			this.mTimeKeeperTabControl = new System.Windows.Forms.TabControl();
 			this.mTimeEntryTabPage = new System.Windows.Forms.TabPage();
 			this.tabPage2 = new System.Windows.Forms.TabPage();
+			this.tabPage1 = new System.Windows.Forms.TabPage();
 			this.mTimeEntryTableLayoutPanel.SuspendLayout();
 			this.mTotalTimeCalcGroupBox.SuspendLayout();
 			this.tableLayoutPanel4.SuspendLayout();
@@ -96,8 +95,22 @@
 			this.mTOCTableLayoutPanel.SuspendLayout();
 			this.mTimeEntryGroupBox.SuspendLayout();
 			this.mMainTimeEntryTableLayoutPanel.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.mSunRegNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mMonRegNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mSunOverNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mTueRegNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mWedRegNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mThrRegNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mFriRegNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mSatRegNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mMonOverNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mTueOverNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mWedOverNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mThrOverNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mFriOverNumericUpDown)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mSatOverNumericUpDown)).BeginInit();
 			this.mOptionsGroupBox.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.mMaxTimeNumericUpDown)).BeginInit();
 			this.mTimeEntryToolStripContainer.ContentPanel.SuspendLayout();
 			this.mTimeEntryToolStripContainer.SuspendLayout();
 			this.mTimeKeeperTabControl.SuspendLayout();
@@ -125,7 +138,7 @@
 			// 
 			// mTotalTimeCalcGroupBox
 			// 
-			this.mTotalTimeCalcGroupBox.BackColor = System.Drawing.Color.Beige;
+			this.mTotalTimeCalcGroupBox.BackColor = System.Drawing.Color.Transparent;
 			this.mTotalTimeCalcGroupBox.Controls.Add(this.tableLayoutPanel4);
 			this.mTotalTimeCalcGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.mTotalTimeCalcGroupBox.Location = new System.Drawing.Point(495, 322);
@@ -240,7 +253,7 @@
 			// 
 			// mTimeOutCalcGroupBox
 			// 
-			this.mTimeOutCalcGroupBox.BackColor = System.Drawing.Color.Beige;
+			this.mTimeOutCalcGroupBox.BackColor = System.Drawing.Color.Transparent;
 			this.mTimeOutCalcGroupBox.Controls.Add(this.mTOCTableLayoutPanel);
 			this.mTimeOutCalcGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.mTimeOutCalcGroupBox.Location = new System.Drawing.Point(4, 322);
@@ -356,14 +369,14 @@
 			// mTimeEntryGroupBox
 			// 
 			this.mTimeEntryGroupBox.AutoSize = true;
-			this.mTimeEntryGroupBox.BackColor = System.Drawing.Color.Beige;
+			this.mTimeEntryGroupBox.BackColor = System.Drawing.Color.Transparent;
 			this.mTimeEntryGroupBox.Controls.Add(this.mMainTimeEntryTableLayoutPanel);
 			this.mTimeEntryGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
 			this.mTimeEntryGroupBox.Location = new System.Drawing.Point(4, 4);
 			this.mTimeEntryGroupBox.Margin = new System.Windows.Forms.Padding(4);
 			this.mTimeEntryGroupBox.Name = "mTimeEntryGroupBox";
 			this.mTimeEntryGroupBox.Padding = new System.Windows.Forms.Padding(4);
-			this.mTimeEntryGroupBox.Size = new System.Drawing.Size(483, 310);
+			this.mTimeEntryGroupBox.Size = new System.Drawing.Size(483, 296);
 			this.mTimeEntryGroupBox.TabIndex = 5;
 			this.mTimeEntryGroupBox.TabStop = false;
 			this.mTimeEntryGroupBox.Text = "Time Entry";
@@ -375,22 +388,7 @@
 			this.mMainTimeEntryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
 			this.mMainTimeEntryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
 			this.mMainTimeEntryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTotalRegTextBox, 1, 8);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mSatRegTextBox, 1, 7);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mFriRegTextBox, 1, 6);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mWedRegTextBox, 1, 4);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTueRegTextBox, 1, 3);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mMonRegTextBox, 1, 2);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mSunRegTextBox, 1, 1);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mThurRegTextBox, 1, 5);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mSunOverTextBox, 2, 1);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mMonOverTextBox, 2, 2);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTueOverTextBox, 2, 3);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mWedOverTextBox, 2, 4);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mThurOverTextBox, 2, 5);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mFriOverTextBox, 2, 6);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mSatOverTextBox, 2, 7);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTotalOverTextBox, 2, 8);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTotalTextBox, 1, 8);
 			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTimeLeftLabel, 0, 9);
 			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTotalLabel, 0, 8);
 			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mSaturdayLabel, 0, 7);
@@ -400,10 +398,23 @@
 			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTuesdayLabel, 0, 3);
 			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mMondayLabel, 0, 2);
 			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mSundayLabel, 0, 1);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTimeLeftOverTextBox, 2, 9);
-			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTimeLeftRegTextBox, 1, 9);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTimeLeftTextBox, 1, 9);
 			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mRegularTimeLabel, 1, 0);
 			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mOvertimeLabel, 2, 0);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mSunRegNumericUpDown, 1, 1);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mMonRegNumericUpDown, 1, 2);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mSunOverNumericUpDown, 2, 1);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTueRegNumericUpDown, 1, 3);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mWedRegNumericUpDown, 1, 4);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mThrRegNumericUpDown, 1, 5);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mFriRegNumericUpDown, 1, 6);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mSatRegNumericUpDown, 1, 7);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mMonOverNumericUpDown, 2, 2);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mTueOverNumericUpDown, 2, 3);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mWedOverNumericUpDown, 2, 4);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mThrOverNumericUpDown, 2, 5);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mFriOverNumericUpDown, 2, 6);
+			this.mMainTimeEntryTableLayoutPanel.Controls.Add(this.mSatOverNumericUpDown, 2, 7);
 			this.mMainTimeEntryTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Top;
 			this.mMainTimeEntryTableLayoutPanel.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
 			this.mMainTimeEntryTableLayoutPanel.Location = new System.Drawing.Point(4, 19);
@@ -420,158 +431,24 @@
 			this.mMainTimeEntryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
 			this.mMainTimeEntryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
 			this.mMainTimeEntryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-			this.mMainTimeEntryTableLayoutPanel.Size = new System.Drawing.Size(475, 287);
+			this.mMainTimeEntryTableLayoutPanel.Size = new System.Drawing.Size(475, 273);
 			this.mMainTimeEntryTableLayoutPanel.TabIndex = 0;
 			// 
-			// mTotalRegTextBox
+			// mTotalTextBox
 			// 
-			this.mTotalRegTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mTotalRegTextBox.Location = new System.Drawing.Point(95, 231);
-			this.mTotalRegTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mTotalRegTextBox.Name = "mTotalRegTextBox";
-			this.mTotalRegTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mTotalRegTextBox.TabIndex = 17;
-			// 
-			// mSatRegTextBox
-			// 
-			this.mSatRegTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mSatRegTextBox.Location = new System.Drawing.Point(95, 201);
-			this.mSatRegTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mSatRegTextBox.Name = "mSatRegTextBox";
-			this.mSatRegTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mSatRegTextBox.TabIndex = 15;
-			// 
-			// mFriRegTextBox
-			// 
-			this.mFriRegTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mFriRegTextBox.Location = new System.Drawing.Point(95, 171);
-			this.mFriRegTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mFriRegTextBox.Name = "mFriRegTextBox";
-			this.mFriRegTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mFriRegTextBox.TabIndex = 13;
-			// 
-			// mWedRegTextBox
-			// 
-			this.mWedRegTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mWedRegTextBox.Location = new System.Drawing.Point(95, 111);
-			this.mWedRegTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mWedRegTextBox.Name = "mWedRegTextBox";
-			this.mWedRegTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mWedRegTextBox.TabIndex = 10;
-			// 
-			// mTueRegTextBox
-			// 
-			this.mTueRegTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mTueRegTextBox.Location = new System.Drawing.Point(95, 81);
-			this.mTueRegTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mTueRegTextBox.Name = "mTueRegTextBox";
-			this.mTueRegTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mTueRegTextBox.TabIndex = 8;
-			// 
-			// mMonRegTextBox
-			// 
-			this.mMonRegTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mMonRegTextBox.Location = new System.Drawing.Point(95, 51);
-			this.mMonRegTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mMonRegTextBox.Name = "mMonRegTextBox";
-			this.mMonRegTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mMonRegTextBox.TabIndex = 6;
-			// 
-			// mSunRegTextBox
-			// 
-			this.mSunRegTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mSunRegTextBox.Location = new System.Drawing.Point(95, 21);
-			this.mSunRegTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mSunRegTextBox.Name = "mSunRegTextBox";
-			this.mSunRegTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mSunRegTextBox.TabIndex = 4;
-			// 
-			// mThurRegTextBox
-			// 
-			this.mThurRegTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mThurRegTextBox.Location = new System.Drawing.Point(95, 141);
-			this.mThurRegTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mThurRegTextBox.Name = "mThurRegTextBox";
-			this.mThurRegTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mThurRegTextBox.TabIndex = 11;
-			// 
-			// mSunOverTextBox
-			// 
-			this.mSunOverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mSunOverTextBox.Location = new System.Drawing.Point(287, 21);
-			this.mSunOverTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mSunOverTextBox.Name = "mSunOverTextBox";
-			this.mSunOverTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mSunOverTextBox.TabIndex = 3;
-			// 
-			// mMonOverTextBox
-			// 
-			this.mMonOverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mMonOverTextBox.Location = new System.Drawing.Point(287, 51);
-			this.mMonOverTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mMonOverTextBox.Name = "mMonOverTextBox";
-			this.mMonOverTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mMonOverTextBox.TabIndex = 5;
-			// 
-			// mTueOverTextBox
-			// 
-			this.mTueOverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mTueOverTextBox.Location = new System.Drawing.Point(287, 81);
-			this.mTueOverTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mTueOverTextBox.Name = "mTueOverTextBox";
-			this.mTueOverTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mTueOverTextBox.TabIndex = 7;
-			// 
-			// mWedOverTextBox
-			// 
-			this.mWedOverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mWedOverTextBox.Location = new System.Drawing.Point(287, 111);
-			this.mWedOverTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mWedOverTextBox.Name = "mWedOverTextBox";
-			this.mWedOverTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mWedOverTextBox.TabIndex = 9;
-			// 
-			// mThurOverTextBox
-			// 
-			this.mThurOverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mThurOverTextBox.Location = new System.Drawing.Point(287, 141);
-			this.mThurOverTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mThurOverTextBox.Name = "mThurOverTextBox";
-			this.mThurOverTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mThurOverTextBox.TabIndex = 0;
-			// 
-			// mFriOverTextBox
-			// 
-			this.mFriOverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mFriOverTextBox.Location = new System.Drawing.Point(287, 171);
-			this.mFriOverTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mFriOverTextBox.Name = "mFriOverTextBox";
-			this.mFriOverTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mFriOverTextBox.TabIndex = 12;
-			// 
-			// mSatOverTextBox
-			// 
-			this.mSatOverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mSatOverTextBox.Location = new System.Drawing.Point(287, 201);
-			this.mSatOverTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mSatOverTextBox.Name = "mSatOverTextBox";
-			this.mSatOverTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mSatOverTextBox.TabIndex = 14;
-			// 
-			// mTotalOverTextBox
-			// 
-			this.mTotalOverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mTotalOverTextBox.Location = new System.Drawing.Point(287, 231);
-			this.mTotalOverTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mTotalOverTextBox.Name = "mTotalOverTextBox";
-			this.mTotalOverTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mTotalOverTextBox.TabIndex = 16;
+			this.mMainTimeEntryTableLayoutPanel.SetColumnSpan(this.mTotalTextBox, 2);
+			this.mTotalTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mTotalTextBox.Location = new System.Drawing.Point(95, 217);
+			this.mTotalTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.mTotalTextBox.Name = "mTotalTextBox";
+			this.mTotalTextBox.Size = new System.Drawing.Size(376, 22);
+			this.mTotalTextBox.TabIndex = 17;
 			// 
 			// mTimeLeftLabel
 			// 
 			this.mTimeLeftLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.mTimeLeftLabel.AutoSize = true;
-			this.mTimeLeftLabel.Location = new System.Drawing.Point(20, 263);
+			this.mTimeLeftLabel.Location = new System.Drawing.Point(20, 249);
 			this.mTimeLeftLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.mTimeLeftLabel.Name = "mTimeLeftLabel";
 			this.mTimeLeftLabel.Size = new System.Drawing.Size(67, 17);
@@ -582,7 +459,7 @@
 			// 
 			this.mTotalLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.mTotalLabel.AutoSize = true;
-			this.mTotalLabel.Location = new System.Drawing.Point(47, 233);
+			this.mTotalLabel.Location = new System.Drawing.Point(47, 219);
 			this.mTotalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.mTotalLabel.Name = "mTotalLabel";
 			this.mTotalLabel.Size = new System.Drawing.Size(40, 17);
@@ -593,7 +470,7 @@
 			// 
 			this.mSaturdayLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.mSaturdayLabel.AutoSize = true;
-			this.mSaturdayLabel.Location = new System.Drawing.Point(22, 203);
+			this.mSaturdayLabel.Location = new System.Drawing.Point(22, 190);
 			this.mSaturdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.mSaturdayLabel.Name = "mSaturdayLabel";
 			this.mSaturdayLabel.Size = new System.Drawing.Size(65, 17);
@@ -604,7 +481,7 @@
 			// 
 			this.mFridayLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.mFridayLabel.AutoSize = true;
-			this.mFridayLabel.Location = new System.Drawing.Point(40, 173);
+			this.mFridayLabel.Location = new System.Drawing.Point(40, 162);
 			this.mFridayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.mFridayLabel.Name = "mFridayLabel";
 			this.mFridayLabel.Size = new System.Drawing.Size(47, 17);
@@ -615,7 +492,7 @@
 			// 
 			this.mThursdayLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.mThursdayLabel.AutoSize = true;
-			this.mThursdayLabel.Location = new System.Drawing.Point(19, 143);
+			this.mThursdayLabel.Location = new System.Drawing.Point(19, 134);
 			this.mThursdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.mThursdayLabel.Name = "mThursdayLabel";
 			this.mThursdayLabel.Size = new System.Drawing.Size(68, 17);
@@ -626,7 +503,7 @@
 			// 
 			this.mWednesdayLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.mWednesdayLabel.AutoSize = true;
-			this.mWednesdayLabel.Location = new System.Drawing.Point(4, 113);
+			this.mWednesdayLabel.Location = new System.Drawing.Point(4, 106);
 			this.mWednesdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.mWednesdayLabel.Name = "mWednesdayLabel";
 			this.mWednesdayLabel.Size = new System.Drawing.Size(83, 17);
@@ -637,7 +514,7 @@
 			// 
 			this.mTuesdayLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.mTuesdayLabel.AutoSize = true;
-			this.mTuesdayLabel.Location = new System.Drawing.Point(24, 83);
+			this.mTuesdayLabel.Location = new System.Drawing.Point(24, 78);
 			this.mTuesdayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.mTuesdayLabel.Name = "mTuesdayLabel";
 			this.mTuesdayLabel.Size = new System.Drawing.Size(63, 17);
@@ -648,7 +525,7 @@
 			// 
 			this.mMondayLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.mMondayLabel.AutoSize = true;
-			this.mMondayLabel.Location = new System.Drawing.Point(29, 53);
+			this.mMondayLabel.Location = new System.Drawing.Point(29, 50);
 			this.mMondayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.mMondayLabel.Name = "mMondayLabel";
 			this.mMondayLabel.Size = new System.Drawing.Size(58, 17);
@@ -659,34 +536,24 @@
 			// 
 			this.mSundayLabel.Anchor = System.Windows.Forms.AnchorStyles.Right;
 			this.mSundayLabel.AutoSize = true;
-			this.mSundayLabel.Location = new System.Drawing.Point(31, 23);
+			this.mSundayLabel.Location = new System.Drawing.Point(31, 22);
 			this.mSundayLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
 			this.mSundayLabel.Name = "mSundayLabel";
 			this.mSundayLabel.Size = new System.Drawing.Size(56, 17);
 			this.mSundayLabel.TabIndex = 18;
 			this.mSundayLabel.Text = "Sunday";
 			// 
-			// mTimeLeftOverTextBox
+			// mTimeLeftTextBox
 			// 
-			this.mTimeLeftOverTextBox.BackColor = System.Drawing.SystemColors.Info;
-			this.mTimeLeftOverTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mTimeLeftOverTextBox.Enabled = false;
-			this.mTimeLeftOverTextBox.Location = new System.Drawing.Point(287, 261);
-			this.mTimeLeftOverTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mTimeLeftOverTextBox.Name = "mTimeLeftOverTextBox";
-			this.mTimeLeftOverTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mTimeLeftOverTextBox.TabIndex = 1;
-			// 
-			// mTimeLeftRegTextBox
-			// 
-			this.mTimeLeftRegTextBox.BackColor = System.Drawing.SystemColors.Info;
-			this.mTimeLeftRegTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.mTimeLeftRegTextBox.Enabled = false;
-			this.mTimeLeftRegTextBox.Location = new System.Drawing.Point(95, 261);
-			this.mTimeLeftRegTextBox.Margin = new System.Windows.Forms.Padding(4);
-			this.mTimeLeftRegTextBox.Name = "mTimeLeftRegTextBox";
-			this.mTimeLeftRegTextBox.Size = new System.Drawing.Size(184, 22);
-			this.mTimeLeftRegTextBox.TabIndex = 2;
+			this.mTimeLeftTextBox.BackColor = System.Drawing.SystemColors.Info;
+			this.mMainTimeEntryTableLayoutPanel.SetColumnSpan(this.mTimeLeftTextBox, 2);
+			this.mTimeLeftTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mTimeLeftTextBox.Enabled = false;
+			this.mTimeLeftTextBox.Location = new System.Drawing.Point(95, 247);
+			this.mTimeLeftTextBox.Margin = new System.Windows.Forms.Padding(4);
+			this.mTimeLeftTextBox.Name = "mTimeLeftTextBox";
+			this.mTimeLeftTextBox.Size = new System.Drawing.Size(376, 22);
+			this.mTimeLeftTextBox.TabIndex = 2;
 			// 
 			// mRegularTimeLabel
 			// 
@@ -710,12 +577,264 @@
 			this.mOvertimeLabel.TabIndex = 28;
 			this.mOvertimeLabel.Text = "Overtime";
 			// 
+			// mSunRegNumericUpDown
+			// 
+			this.mSunRegNumericUpDown.DecimalPlaces = 2;
+			this.mSunRegNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mSunRegNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mSunRegNumericUpDown.Location = new System.Drawing.Point(94, 20);
+			this.mSunRegNumericUpDown.Name = "mSunRegNumericUpDown";
+			this.mSunRegNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mSunRegNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mSunRegNumericUpDown.TabIndex = 29;
+			this.mSunRegNumericUpDown.Tag = "Regular";
+			this.mSunRegNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mSunRegNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mMonRegNumericUpDown
+			// 
+			this.mMonRegNumericUpDown.DecimalPlaces = 2;
+			this.mMonRegNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mMonRegNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mMonRegNumericUpDown.Location = new System.Drawing.Point(94, 48);
+			this.mMonRegNumericUpDown.Name = "mMonRegNumericUpDown";
+			this.mMonRegNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mMonRegNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mMonRegNumericUpDown.TabIndex = 30;
+			this.mMonRegNumericUpDown.Tag = "Regular";
+			this.mMonRegNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mMonRegNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mSunOverNumericUpDown
+			// 
+			this.mSunOverNumericUpDown.DecimalPlaces = 2;
+			this.mSunOverNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mSunOverNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mSunOverNumericUpDown.Location = new System.Drawing.Point(286, 20);
+			this.mSunOverNumericUpDown.Name = "mSunOverNumericUpDown";
+			this.mSunOverNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mSunOverNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mSunOverNumericUpDown.TabIndex = 31;
+			this.mSunOverNumericUpDown.Tag = "Overtime";
+			this.mSunOverNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mSunOverNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mTueRegNumericUpDown
+			// 
+			this.mTueRegNumericUpDown.DecimalPlaces = 2;
+			this.mTueRegNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mTueRegNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mTueRegNumericUpDown.Location = new System.Drawing.Point(94, 76);
+			this.mTueRegNumericUpDown.Name = "mTueRegNumericUpDown";
+			this.mTueRegNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mTueRegNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mTueRegNumericUpDown.TabIndex = 32;
+			this.mTueRegNumericUpDown.Tag = "Regular";
+			this.mTueRegNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mTueRegNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mWedRegNumericUpDown
+			// 
+			this.mWedRegNumericUpDown.DecimalPlaces = 2;
+			this.mWedRegNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mWedRegNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mWedRegNumericUpDown.Location = new System.Drawing.Point(94, 104);
+			this.mWedRegNumericUpDown.Name = "mWedRegNumericUpDown";
+			this.mWedRegNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mWedRegNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mWedRegNumericUpDown.TabIndex = 33;
+			this.mWedRegNumericUpDown.Tag = "Regular";
+			this.mWedRegNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mWedRegNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mThrRegNumericUpDown
+			// 
+			this.mThrRegNumericUpDown.DecimalPlaces = 2;
+			this.mThrRegNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mThrRegNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mThrRegNumericUpDown.Location = new System.Drawing.Point(94, 132);
+			this.mThrRegNumericUpDown.Name = "mThrRegNumericUpDown";
+			this.mThrRegNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mThrRegNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mThrRegNumericUpDown.TabIndex = 34;
+			this.mThrRegNumericUpDown.Tag = "Regular";
+			this.mThrRegNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mThrRegNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mFriRegNumericUpDown
+			// 
+			this.mFriRegNumericUpDown.DecimalPlaces = 2;
+			this.mFriRegNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mFriRegNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mFriRegNumericUpDown.Location = new System.Drawing.Point(94, 160);
+			this.mFriRegNumericUpDown.Name = "mFriRegNumericUpDown";
+			this.mFriRegNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mFriRegNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mFriRegNumericUpDown.TabIndex = 35;
+			this.mFriRegNumericUpDown.Tag = "Regular";
+			this.mFriRegNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mFriRegNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mSatRegNumericUpDown
+			// 
+			this.mSatRegNumericUpDown.DecimalPlaces = 2;
+			this.mSatRegNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mSatRegNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mSatRegNumericUpDown.Location = new System.Drawing.Point(94, 188);
+			this.mSatRegNumericUpDown.Name = "mSatRegNumericUpDown";
+			this.mSatRegNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mSatRegNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mSatRegNumericUpDown.TabIndex = 36;
+			this.mSatRegNumericUpDown.Tag = "Regular";
+			this.mSatRegNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mSatRegNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mMonOverNumericUpDown
+			// 
+			this.mMonOverNumericUpDown.DecimalPlaces = 2;
+			this.mMonOverNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mMonOverNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mMonOverNumericUpDown.Location = new System.Drawing.Point(286, 48);
+			this.mMonOverNumericUpDown.Name = "mMonOverNumericUpDown";
+			this.mMonOverNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mMonOverNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mMonOverNumericUpDown.TabIndex = 37;
+			this.mMonOverNumericUpDown.Tag = "Overtime";
+			this.mMonOverNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mMonOverNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mTueOverNumericUpDown
+			// 
+			this.mTueOverNumericUpDown.DecimalPlaces = 2;
+			this.mTueOverNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mTueOverNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mTueOverNumericUpDown.Location = new System.Drawing.Point(286, 76);
+			this.mTueOverNumericUpDown.Name = "mTueOverNumericUpDown";
+			this.mTueOverNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mTueOverNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mTueOverNumericUpDown.TabIndex = 38;
+			this.mTueOverNumericUpDown.Tag = "Overtime";
+			this.mTueOverNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mTueOverNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mWedOverNumericUpDown
+			// 
+			this.mWedOverNumericUpDown.DecimalPlaces = 2;
+			this.mWedOverNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mWedOverNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mWedOverNumericUpDown.Location = new System.Drawing.Point(286, 104);
+			this.mWedOverNumericUpDown.Name = "mWedOverNumericUpDown";
+			this.mWedOverNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mWedOverNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mWedOverNumericUpDown.TabIndex = 39;
+			this.mWedOverNumericUpDown.Tag = "Overtime";
+			this.mWedOverNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mWedOverNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mThrOverNumericUpDown
+			// 
+			this.mThrOverNumericUpDown.DecimalPlaces = 2;
+			this.mThrOverNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mThrOverNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mThrOverNumericUpDown.Location = new System.Drawing.Point(286, 132);
+			this.mThrOverNumericUpDown.Name = "mThrOverNumericUpDown";
+			this.mThrOverNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mThrOverNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mThrOverNumericUpDown.TabIndex = 40;
+			this.mThrOverNumericUpDown.Tag = "Overtime";
+			this.mThrOverNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mThrOverNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mFriOverNumericUpDown
+			// 
+			this.mFriOverNumericUpDown.DecimalPlaces = 2;
+			this.mFriOverNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mFriOverNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mFriOverNumericUpDown.Location = new System.Drawing.Point(286, 160);
+			this.mFriOverNumericUpDown.Name = "mFriOverNumericUpDown";
+			this.mFriOverNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mFriOverNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mFriOverNumericUpDown.TabIndex = 41;
+			this.mFriOverNumericUpDown.Tag = "Overtime";
+			this.mFriOverNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mFriOverNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
+			// mSatOverNumericUpDown
+			// 
+			this.mSatOverNumericUpDown.DecimalPlaces = 2;
+			this.mSatOverNumericUpDown.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.mSatOverNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.mSatOverNumericUpDown.Location = new System.Drawing.Point(286, 188);
+			this.mSatOverNumericUpDown.Name = "mSatOverNumericUpDown";
+			this.mSatOverNumericUpDown.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+			this.mSatOverNumericUpDown.Size = new System.Drawing.Size(186, 22);
+			this.mSatOverNumericUpDown.TabIndex = 42;
+			this.mSatOverNumericUpDown.Tag = "Overtime";
+			this.mSatOverNumericUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.mSatOverNumericUpDown.ValueChanged += new System.EventHandler(this.NumericUpDown_ValueChanged);
+			// 
 			// mOptionsGroupBox
 			// 
 			this.mOptionsGroupBox.Controls.Add(this.dateTimePicker1);
 			this.mOptionsGroupBox.Controls.Add(this.mTodaysDateLabel);
 			this.mOptionsGroupBox.Controls.Add(this.mTodaysDateTimePicker);
-			this.mOptionsGroupBox.Controls.Add(this.numericUpDown1);
+			this.mOptionsGroupBox.Controls.Add(this.mMaxTimeNumericUpDown);
 			this.mOptionsGroupBox.Controls.Add(this.mMaxTimeLabel);
 			this.mOptionsGroupBox.Dock = System.Windows.Forms.DockStyle.Top;
 			this.mOptionsGroupBox.Location = new System.Drawing.Point(495, 4);
@@ -757,12 +876,22 @@
 			this.mTodaysDateTimePicker.TabIndex = 3;
 			this.mTodaysDateTimePicker.Value = new System.DateTime(2014, 8, 10, 7, 23, 53, 0);
 			// 
-			// numericUpDown1
+			// mMaxTimeNumericUpDown
 			// 
-			this.numericUpDown1.Location = new System.Drawing.Point(94, 41);
-			this.numericUpDown1.Name = "numericUpDown1";
-			this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
-			this.numericUpDown1.TabIndex = 2;
+			this.mMaxTimeNumericUpDown.Increment = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+			this.mMaxTimeNumericUpDown.Location = new System.Drawing.Point(94, 41);
+			this.mMaxTimeNumericUpDown.Name = "mMaxTimeNumericUpDown";
+			this.mMaxTimeNumericUpDown.Size = new System.Drawing.Size(120, 22);
+			this.mMaxTimeNumericUpDown.TabIndex = 2;
+			this.mMaxTimeNumericUpDown.Value = new decimal(new int[] {
+            40,
+            0,
+            0,
+            0});
 			// 
 			// mMaxTimeLabel
 			// 
@@ -794,6 +923,7 @@
 			// 
 			this.mTimeKeeperTabControl.Controls.Add(this.mTimeEntryTabPage);
 			this.mTimeKeeperTabControl.Controls.Add(this.tabPage2);
+			this.mTimeKeeperTabControl.Controls.Add(this.tabPage1);
 			this.mTimeKeeperTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.mTimeKeeperTabControl.Location = new System.Drawing.Point(0, 0);
 			this.mTimeKeeperTabControl.Margin = new System.Windows.Forms.Padding(4);
@@ -826,6 +956,16 @@
 			this.tabPage2.Text = "Reporting";
 			this.tabPage2.UseVisualStyleBackColor = true;
 			// 
+			// tabPage1
+			// 
+			this.tabPage1.Location = new System.Drawing.Point(4, 25);
+			this.tabPage1.Name = "tabPage1";
+			this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPage1.Size = new System.Drawing.Size(991, 474);
+			this.tabPage1.TabIndex = 2;
+			this.tabPage1.Text = "Options";
+			this.tabPage1.UseVisualStyleBackColor = true;
+			// 
 			// TimeKeeperForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -850,9 +990,23 @@
 			this.mTimeEntryGroupBox.PerformLayout();
 			this.mMainTimeEntryTableLayoutPanel.ResumeLayout(false);
 			this.mMainTimeEntryTableLayoutPanel.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.mSunRegNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mMonRegNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mSunOverNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mTueRegNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mWedRegNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mThrRegNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mFriRegNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mSatRegNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mMonOverNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mTueOverNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mWedOverNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mThrOverNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mFriOverNumericUpDown)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mSatOverNumericUpDown)).EndInit();
 			this.mOptionsGroupBox.ResumeLayout(false);
 			this.mOptionsGroupBox.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.mMaxTimeNumericUpDown)).EndInit();
 			this.mTimeEntryToolStripContainer.ContentPanel.ResumeLayout(false);
 			this.mTimeEntryToolStripContainer.ResumeLayout(false);
 			this.mTimeEntryToolStripContainer.PerformLayout();
@@ -884,22 +1038,7 @@
     private System.Windows.Forms.Label mTOCTimeTOTALLabel;
 		private System.Windows.Forms.Label mTOCTimeOutLabel;
     private System.Windows.Forms.TableLayoutPanel mMainTimeEntryTableLayoutPanel;
-    private System.Windows.Forms.TextBox mTotalRegTextBox;
-    private System.Windows.Forms.TextBox mSatRegTextBox;
-    private System.Windows.Forms.TextBox mFriRegTextBox;
-    private System.Windows.Forms.TextBox mWedRegTextBox;
-    private System.Windows.Forms.TextBox mTueRegTextBox;
-    private System.Windows.Forms.TextBox mMonRegTextBox;
-    private System.Windows.Forms.TextBox mSunRegTextBox;
-    private System.Windows.Forms.TextBox mThurRegTextBox;
-    private System.Windows.Forms.TextBox mSunOverTextBox;
-    private System.Windows.Forms.TextBox mMonOverTextBox;
-    private System.Windows.Forms.TextBox mTueOverTextBox;
-    private System.Windows.Forms.TextBox mWedOverTextBox;
-    private System.Windows.Forms.TextBox mThurOverTextBox;
-    private System.Windows.Forms.TextBox mFriOverTextBox;
-    private System.Windows.Forms.TextBox mSatOverTextBox;
-    private System.Windows.Forms.TextBox mTotalOverTextBox;
+		private System.Windows.Forms.TextBox mTotalTextBox;
     private System.Windows.Forms.Label mTimeLeftLabel;
     private System.Windows.Forms.Label mTotalLabel;
     private System.Windows.Forms.Label mSaturdayLabel;
@@ -908,14 +1047,13 @@
     private System.Windows.Forms.Label mWednesdayLabel;
     private System.Windows.Forms.Label mTuesdayLabel;
     private System.Windows.Forms.Label mMondayLabel;
-    private System.Windows.Forms.Label mSundayLabel;
-    private System.Windows.Forms.TextBox mTimeLeftOverTextBox;
-    private System.Windows.Forms.TextBox mTimeLeftRegTextBox;
+		private System.Windows.Forms.Label mSundayLabel;
+    private System.Windows.Forms.TextBox mTimeLeftTextBox;
     private System.Windows.Forms.Label mRegularTimeLabel;
 		private System.Windows.Forms.Label mOvertimeLabel;
 		private System.Windows.Forms.Label mTodaysDateLabel;
 		private System.Windows.Forms.DateTimePicker mTodaysDateTimePicker;
-		private System.Windows.Forms.NumericUpDown numericUpDown1;
+		private System.Windows.Forms.NumericUpDown mMaxTimeNumericUpDown;
 		private System.Windows.Forms.Label mMaxTimeLabel;
 		private System.Windows.Forms.DateTimePicker mTOCTimeINDateTimePicker;
 		private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -924,6 +1062,21 @@
 		private System.Windows.Forms.DateTimePicker dateTimePicker6;
 		private System.Windows.Forms.DateTimePicker mTOCTimeTOTALDateTimePicker;
 		private System.Windows.Forms.DateTimePicker mTOCTimeOUTDateTimePicker;
+		private System.Windows.Forms.NumericUpDown mMonRegNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mSunOverNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mTueRegNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mWedRegNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mThrRegNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mFriRegNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mSatRegNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mMonOverNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mTueOverNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mWedOverNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mThrOverNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mFriOverNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mSatOverNumericUpDown;
+		private System.Windows.Forms.NumericUpDown mSunRegNumericUpDown;
+		private System.Windows.Forms.TabPage tabPage1;
   }
 }
 

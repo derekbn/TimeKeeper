@@ -1,4 +1,4 @@
-﻿Works Cited
+﻿References
 
 Icons
 Clock Icon - clock.ico
